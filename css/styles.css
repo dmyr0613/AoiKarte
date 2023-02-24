@@ -1,0 +1,561 @@
+body, input, select, textarea  {
+  font-family: "M PLUS 1p", 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+  background-color: #F3EDF7;
+  position: relative;
+  margin: 0px;
+  font-size: 12px;
+  padding: 0px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>> ページ全体 >>>>>>>>>>>>>>>>>>>> */
+.page-content > .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 10px;
+}
+
+.bg-background {
+  background-color: #F3EDF7;
+}
+/* <<<<<<<<<<<<<<<<<<<< ページ全体 <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> 見出し文字 >>>>>>>>>>>>>>>>>>>> */
+h1, h2, h3, h4, h5, h6 {
+  color: #3d4449;
+  font-family: "M PLUS 1p", 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0;
+}
+h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+h2 {
+  font-size: 35px;
+  line-height: 1.333;
+}
+h3 {
+  font-size: 30px;
+  line-height: 1;
+}
+h4 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+h5 {
+  font-size: 12px;
+  line-height: 1;
+}
+h6 {
+  font-size: 10px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1680px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  h1 {
+    font-size: 3.25em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  h1 {
+    font-size: 35px;
+    line-height: 1.333;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<< 見出し文字 <<<<<<<<<<<<<<<<<<<< */
+
+
+/* >>>>>>>>>>>>>>>>>>>> サイドメニュー >>>>>>>>>>>>>>>>>>>> */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 90px 0 0;
+  width: 16.667%;   /* これを入れないとレスポンシブ時に崩れる */
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 11.5rem;
+    padding: 0;
+  }
+}
+
+
+/* ナビゲーションバー  */
+.navbar {
+  /* box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1); */
+}
+
+@media (min-width: 767.98px) {
+  .navbar {
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    color: black;
+  }
+}
+
+.sidebar .nav-link {
+  color: #333;
+}
+.sidebar .nav-link.active {
+  color: #0d6efd;
+}
+/* <<<<<<<<<<<<<<<<<<<< サイドメニュー <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> コンテナベース >>>>>>>>>>>>>>>>>>>> */
+.container-base {
+  border-radius:10px;
+  margin: 0px 0px 5px 0px;
+  font-size: 14px;
+  /* background-color: #999; */
+}
+/* メニューアイコン */
+.container-base > .container-menu {
+  float: right;
+  color: #8e8e8e;
+}
+/* <<<<<<<<<<<<<<<<<<<< コンテナベース <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> アイコン >>>>>>>>>>>>>>>>>>>> */
+/* 動作がある中アイコン */
+.icon-mid {
+  color: #8e8e8e;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.icon-mid-active {
+  background-color: #eaddff;
+  color: #6750a4;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.icon-mid:hover,
+.icon-mid:focus {
+  background-color: #eaddff;
+	color: #6750a4;
+}
+/* 動作がない中アイコン */
+.icon-mid-nomal {
+  color: #8e8e8e;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* 動作がある中アイコン（グレー） */
+.icon-mid-gray {
+  background-color: #bcbcbc;
+  color: #fff;
+  padding: 4px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.icon-mid-gray:hover,
+.icon-mid-gray:focus {
+  background-color: #eaddff;
+	color: #6750a4;
+}
+
+/* 患者情報アイコン非活性 */
+.icon-pinfo {
+  background-color: #f3f3f3;
+  color: #fff;
+  padding: 6px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+/* 患者情報アイコン活性 */
+.icon-pinfo-active {
+  background-color: #eaddff;
+  color: #6750a4;
+  padding: 6px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+/* <<<<<<<<<<<<<<<<<<<< アイコン <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> ボタン >>>>>>>>>>>>>>>>>>>> */
+/* 小ボタン */
+.button-small {
+  /* color: #8e8e8e; */
+  font-size: 12px;
+  padding: 5px;
+  /* margin: 5px 5px; */
+  height: 25px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 15px;
+  display: inline-block;
+  border-color: #6750a4;
+  border-style: solid;
+  border-width: 1px;
+}
+.button-small:hover,
+.button-smallmid:focus {
+  background-color: #eaddff;
+	color: #6750a4;
+}
+
+/* 中ボタン */
+.button-middle {
+  /* color: #8e8e8e; */
+  font-size: 14px;
+  padding: 10px;
+  /* margin: 5px 5px; */
+  height: 35px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 35px;
+  display: inline-block;
+  border-color: #6750a4;
+  border-style: solid;
+  border-width: 1px;
+}
+.button-middle:hover,
+.button-middle:focus {
+  background-color: #eaddff;
+	color: #6750a4;
+}
+
+/* オーダーボタン */
+.order-button {
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+  /* margin: 5px 5px; */
+  height: 35px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: left;
+  border-radius: 35px;
+  display: inline-block;
+  /* width: 150px; */
+  width: 100%;
+}
+.order-button:hover,
+.order-button:focus {
+  background-color: #eaddff;
+	color: #6750a4;
+}
+/* オーダーボタンアクティブ */
+.order-button-active {
+  background-color: #eaddff;
+  color: #6750a4;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+  /* margin: 5px 5px; */
+  height: 35px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: left;
+  border-radius: 35px;
+  display: inline-block;
+  /* width: 150px; */
+  width: 100%;
+}
+
+/* オーダーボタンアイコン */
+.order-button-icon {
+  margin: -2px 0px 0px 0px;
+  float: left;
+  /* background-color: #bcbcbc; */
+  color: #8e8e8e;
+  padding: 4px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+/* オーダーボタンバッジ */
+.order-button-badge {
+  margin: -2px 0px 0px 0px;
+  float: right;
+  background-color: #bcbcbc;
+  color: #fff;
+  padding: 4px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+}
+/* <<<<<<<<<<<<<<<<<<<< ボタン <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> コンテナボックス >>>>>>>>>>>>>>>>>>>> */
+/* テキストボックスライクなラベル */
+.container-box {
+  border-radius:10px;
+  margin: 0px 0px 5px 0px;
+  /* font-size: 12px; */
+  padding: 5px 5px 5px 10px;
+  background:#fff;
+  height: 30px;
+  width: 150px;
+  text-align: left;
+}
+.container-box-wide {
+  border-radius:10px;
+  margin: 0px 0px 5px 0px;
+  /* font-size: 12px; */
+  padding: 5px 5px 5px 10px;
+  background:#fff;
+  height: 30px;
+  width: 180px;
+  text-align: left;
+}
+/* コンテナボックスメニューアイコン */
+.container-box-icon {
+  margin: -2px 0px 0px 0px;
+  float: right;
+}
+/* <<<<<<<<<<<<<<<<<<<< コンテナボックス <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> テキストボックス >>>>>>>>>>>>>>>>>>>> */
+/* 中テキストボックス */
+/* .text-box-middle {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  height: 35px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 35px;
+  display: inline-block;
+  border-color: #6750a4;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+} */
+/* <<<<<<<<<<<<<<<<<<<< テキストボックス <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> 指示歴ナビリンク >>>>>>>>>>>>>>>>>>>> */
+.shiji-reki-nav{
+	margin: 0;
+	padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0px 0px 1px 0px;
+}
+.shiji-reki-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.shiji-reki-nav li {
+  padding: 0px 10px 0px;
+  /* width: 100%; */
+  display: flex;
+  list-style: none;
+}
+.shiji-reki-nav li:not(:last-child){
+  border-right:2px solid #ddd;  /* 区切り線 */
+}
+.shiji-reki-nav li > .shiji-reki-nav-active {
+  color: #6750a4;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.shiji-reki-nav a {
+	color: #8e8e8e;
+	text-decoration: none;
+	font-size: 14px;
+}
+.shiji-reki-nav a:hover,
+.shiji-reki-nav a:focus {
+	color: #6750a4;
+  font-weight: bold;
+}
+
+/* レスポンシブ対応 */
+@media(max-width:800px){
+    .shiji-reki-nav{
+        flex-wrap: wrap;
+    }
+    .shiji-reki-nav li{
+        width: 50%;
+    }
+}
+/* <<<<<<<<<<<<<<<<<<<< 指示歴ナビリンク <<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>> カード >>>>>>>>>>>>>>>>>>>> */
+/* 指示歴日付部 */
+.card-date-title {
+  border-radius:10px;
+  margin: 0px 0px 5px 0px;
+  font-size: 14px;
+  padding: 10px 10px 10px 20px;
+  background:#fffbfe;
+  height: 40px;
+}
+/* 指示歴タイトル部メニューアイコン */
+.card-date-title>.card-date-title-menu {
+  margin: -5px 0px 0px 0px;
+  float: right;
+}
+
+/* 指示歴ベース */
+.card-nomal {
+  background:#fff;
+  border-radius:10px;
+  margin: 0px 0px 5px 0px;
+  font-size: 14px;
+  padding: 10px;
+}
+/* 指示歴タイトル部 */
+.card-heading>.card-title {
+  padding-top: 0px;
+}
+/* 指示歴タイトル部メニューアイコン */
+.card-heading>.card-title>.card-menu {
+  float: right;
+}
+/* 指示歴タイトル部日付 */
+.card-heading>.card-date {
+  padding: 0px 0px 0px 14px;
+  font-weight: bold;
+  color: #6750a4;
+}
+/* 指示歴内容部 */
+.card-body {
+  padding: 5px 0px 0px 14px;
+}
+/* 指示歴内容部 */
+.card-body-record {
+  padding: 5px 5px 0px 14px;
+  background-color: #fffbfe;
+}
+/* 指示歴詳細部 */
+.card-detail {
+  padding: 5px 0px 0px 14px;
+  font-size: 11px;
+}
+/* <<<<<<<<<<<<<<<<<<<< カード <<<<<<<<<<<<<<<<<<<< */
+
+
+/* テーブルレイアウト確認用 */
+table{
+  /* border:1px solid #ddd;
+  border-collapse: collapse; */
+  white-space: nowrap;
+}
+
+th{
+  /* background:lightblue;
+  padding:0px;
+  border:1px solid #666; */
+  text-align:center;
+}
+
+td{
+  /* background:pink;
+  padding:0px;
+  border:1px solid #666; */
+}
+
+/* >>>>>>>>>>>>>>>>>>>> フォーム >>>>>>>>>>>>>>>>>>>> */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #ffffff;
+  border-radius: 35px;
+  border: none;
+  border: solid 0.5px #6750a4;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+  height:35px;
+}
+
+  input[type="text"]:invalid,
+  input[type="password"]:invalid,
+  input[type="email"]:invalid,
+  input[type="tel"]:invalid,
+  input[type="search"]:invalid,
+  input[type="url"]:invalid,
+  select:invalid,
+  textarea:invalid {
+    box-shadow: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="search"]:focus,
+  input[type="url"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #6750a4;
+    box-shadow: 0 0 0 0.5px #6750a4;
+  }
+/* <<<<<<<<<<<<<<<<<<<< フォーム <<<<<<<<<<<<<<<<<<<< */

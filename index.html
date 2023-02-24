@@ -1,0 +1,516 @@
+<!doctype html>
+<htmllang="ja">
+<head>
+	<!--必要なmetaタグ-->
+	<metacharset="utf8">
+	<metaname="viewport"content="width=devicewidth,initialscale=1">
+
+	<!--BootstrapCSS-->
+	<!-- <linkhref="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"rel="stylesheet"> -->
+	<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+	<!--CSS追記があれば、BootstrapCSSの後に追記-->
+	<!-- styles -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">-->
+	<!-- fontawesome kit 読み込み-->
+	<script src="https://kit.fontawesome.com/d430b8515c.js" crossorigin="anonymous"></script>
+
+	<title>AoiKarte</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-background p-3">
+
+		<!-- トグルボタン成功例 -->
+		<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+			</ul>
+		</div> -->
+
+	<!-- 	<nav class="navbar navbar-light bg-background p-3"> -->
+	  <!-- <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+	      <a class="navbar-brand" href="#">
+	          Simple Dashboard
+	      </a>
+	      <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	      </button>
+	  </div>
+	  <div class="col-12 col-md-4 col-lg-2">
+	      <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+	  </div>
+	  <div class="col-12 col-md-5 col-lg-8 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">
+	      <div class="mr-3 mt-1">
+	          <a class="github-button" href="https://github.com/themesberg/simple-bootstrap-5-dashboard" data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star /themesberg/simple-bootstrap-5-dashboard">Star</a>
+	      </div>
+	      <div class="dropdown">
+	          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+	            Hello, John Doe
+	          </button>
+	          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	            <li><a class="dropdown-item" href="#">Settings</a></li>
+	            <li><a class="dropdown-item" href="#">Messages</a></li>
+	            <li><a class="dropdown-item" href="#">Sign out</a></li>
+	          </ul>
+	        </div>
+	  </div> -->
+
+
+		<div class="d-flex col-12 justify-content-start">
+			<!-- >>>>> 患者情報テーブル >>>>> -->
+			<table>
+				<tr>
+					<td width=70px rowspan="2" align="center"><img src="img/pt_femaile.png" width="50"></td>
+					<td width=130px ><h4>1234567890</h4></td>
+					<td width=50px><div class="button-small">　A型　</div></td>
+					<td width=20px>　</td>
+					<td width=200px>スルガ　アオイ</td>
+					<td><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></td>
+				</tr>
+				<tr>
+					<td height=10px colspan="2">女性／140cm／40kg／67歳</td>
+					<td width=20px>　</td>
+					<td rowspan="2" colspan="2"><h3>駿河　葵</h3></td>
+				</tr>
+				<tr>
+					<td><div class="button-small">入院パス</div></td>
+					<td colspan="2"><div class="container-box-wide">入院履歴あり
+						<div class="container-box-icon"><div class="icon-mid-gray"><i class="fa-solid fa-chevron-down"></i></div></div>
+					</div></td>
+					<td width=20px>　</td>
+				</tr>
+			</table>
+			<!-- <<<<< 患者情報テーブル <<<<< -->
+
+			<!-- >>>>> 患者選択テーブル（レスポンシブ非表示） >>>>> -->
+			<div class="d-md-block collapse">
+				<table>
+					<tr>
+						<td><div class="icon-mid-gray"><i class="fa-solid fa-chevron-left"></i></div></td>
+						<td><div class="icon-mid-gray"><i class="fa-solid fa-chevron-down"></i></div></td>
+						<td><div class="icon-mid-gray"><i class="fa-solid fa-chevron-right"></i></div></td>
+					</tr>
+					<tr>
+						<td colspan="3" text-align="center"><div class="button-middle">患者選択</div></td>
+					</tr>
+					<tr>
+						<td colspan="3">　</td>
+					</tr>
+				</table>
+			</div>
+			<!-- <<<<< 患者選択テーブル（レスポンシブ非表示） <<<<< -->
+
+			<!-- >>>>> 発行診療科テーブル（レスポンシブ非表示） >>>>> -->
+			<div class="d-md-block collapse">
+				<table>
+					<tr>
+						<td>　</td>
+						<td><div class="container-box">血液内科
+							<div class="container-box-icon"><div class="icon-mid-gray"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+						</div></td>
+					</tr>
+					<tr>
+						<td>　</td>
+						<td><div class="container-box">登呂　太郎
+							<div class="container-box-icon"><div class="icon-mid-gray"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+						</div></td>
+					</tr>
+					<tr>
+						<td>　</td>
+					</tr>
+				</table>
+			</div>
+			<!-- <<<<< 発行診療科テーブル（レスポンシブ非表示） <<<<< -->
+
+			<!-- >>>>> 発行診療科テーブル（レスポンシブ非表示） >>>>> -->
+			<div class="d-md-block collapse">
+				<table>
+					<tr>
+						<td>　</td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo-active"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+					</tr>
+					<tr>
+						<td>　</td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+						<td><div class="container-box-icon"><div class="icon-pinfo"><i class="fa-solid fa-magnifying-glass"></i></div></div></td>
+					</tr>
+					<tr>
+						<td>　</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- <<<<< 発行診療科テーブル（レスポンシブ非表示） <<<<< -->
+
+			<!-- >>>>> 利用者テーブル（レスポンシブ非表示） >>>>> -->
+			<div class="d-md-block collapse">
+				<table>
+					<tr>
+						<td>　</td>
+						<td><div class="container-box">３西病棟・看護師
+							<div class="container-box-icon"><div class="icon-mid-gray"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+						</div></td>
+					</tr>
+					<tr>
+						<td>　</td>
+						<td><div class="container-box">清水　花子
+							<div class="container-box-icon"><div class="icon-mid-gray"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+						</div></td>
+					</tr>
+					<tr>
+						<td>　</td>
+						<td>　</td>
+					</tr>
+				</table>
+			</div>
+			<!-- <<<<< 利用者テーブル（レスポンシブ非表示） <<<<< -->
+		</div>
+	</nav>
+
+
+
+		<div class="page-content">
+			<div class="row">
+
+			<div class="col-md-2 navbar-light">
+
+				<div class="container-fluid">
+
+					<!-- トグルボタン -->
+					<!-- <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					</button> -->
+					<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+						</ul>
+					</div> -->
+
+					<!-- <nav class="collapse navbar-collapse" id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse "> -->
+					<nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse ">
+
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+						</ul>
+
+						<div class="position-sticky pt-md-5 p-2">
+
+						  <ul class="nav flex-column">
+
+								<!-- <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+								</button> -->
+								<!-- >>>>> オーダボタンテーブル（レスポンシブ非表示） >>>>> -->
+								<table>
+									<tr>
+										<td>　</td>
+										<td><input type="text" id="order-button-search" name="order-button-search" placeholder="検索"></input>
+											<!-- <div class="icon-mid-gray"><i class="fa-solid fa-magnifying-glass"></i></div> -->
+										</td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid-active"><i class="fa-solid fa-star"></i></div></td>
+										<td><div class="order-button">SOAP
+											<div class="order-button-icon"><i class="fa-solid fa-capsules"></i></div>
+										</div></td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-home"></i></div></td>
+										<td><div class="order-button-active">処方
+											<div class="order-button-icon"><i class="fa-solid fa-capsules"></i></div>
+											<div class="order-button-badge">1</div>
+										</div></td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-earth"></i></div></td>
+										<td><div class="order-button">検体検査
+											<div class="order-button-icon"><i class="fa-solid fa-capsules"></i></div>
+										</div></td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-capsules"></i></div></td>
+										<td><div class="order-button">注射
+											<div class="order-button-icon"><i class="fa-solid fa-syringe"></i></div>
+										</div></td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-vial"></i></div></td>
+										<td><div class="order-button">検体検査
+											<div class="order-button-icon"><i class="fa-solid fa-vial"></i></div>
+										</div></td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-x-ray"></i></div></td>
+										<td><div class="order-button">放射線
+											<div class="order-button-icon"><i class="fa-solid fa-x-ray"></i></div>
+										</div></td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-stethoscope"></i></div></td>
+										<td>　</td>
+									</tr>
+									<tr>
+										<td><div class="icon-mid"><i class="fa-solid fa-gear"></i></div></td>
+										<td>　</td>
+									</tr>
+								</table>
+								<!-- <<<<< オーダボタンテーブル（レスポンシブ非表示） <<<<< -->
+							</ul>
+
+
+					  </div>
+					</nav>
+
+					<!-- <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
+							<h1 class="h2">Dashboard</h1>
+					</main> -->
+<!--
+					<div id="sidebar">
+						<nav id="menu">
+							<ul>
+								<li><a href="index.html">Homepage</a></li>
+								<li><a href="generic.html">Generic</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li>
+									<span class="opener">Submenu</span>
+									<ul>
+										<li><a href="#">Lorem Dolor</a></li>
+										<li><a href="#">Ipsum Adipiscing</a></li>
+										<li><a href="#">Tempus Magna</a></li>
+										<li><a href="#">Feugiat Veroeros</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Etiam Dolore</a></li>
+								<li><a href="#">Adipiscing</a></li>
+								<li>
+									<span class="opener">Another Submenu</span>
+									<ul>
+										<li><a href="#">Lorem Dolor</a></li>
+										<li><a href="#">Ipsum Adipiscing</a></li>
+										<li><a href="#">Tempus Magna</a></li>
+										<li><a href="#">Feugiat Veroeros</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Maximus Erat</a></li>
+								<li><a href="#">Sapien Mauris</a></li>
+								<li><a href="#">Amet Lacinia</a></li>
+							</ul>
+						</nav>
+					</div> -->
+
+				</div>
+
+			</div>
+
+			<div class="col-md-10">
+				<div class="row">
+
+					<!-- 左サイド -->
+					<div class="col-md-4">
+
+						<!-- 指示歴ナビリンク -->
+						<div class="container-base">
+							<ul class="shiji-reki-nav">
+							  <li><a class="shiji-reki-nav-active" href="#">指示歴</a></li>
+								<li><a class="shiji-reki-nav" href="#">処方セット</a></li>
+								<li><a class="shiji-reki-nav" href="#">検体検査</a></li>
+								<li><a class="shiji-reki-nav" href="#">受診歴</a></li>
+							</ul>
+							<!-- <div class="container-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div> -->
+						</div>
+
+						<!-- 指示歴設定アイコン -->
+						<div class="container-base">
+							<div class="icon-mid-active"><i class="fa-solid fa-list"></i></div>
+							<div class="icon-mid"><i class="fa-solid fa-notes-medical"></i></div>
+							<div class="icon-mid"><i class="fa-solid fa-capsules"></i></div>
+							<div class="icon-mid"><i class="fa-solid fa-user-doctor"></i></div>
+							<div class="container-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+						</div>
+
+						<!-- 指示歴日付 -->
+						<div class="card-date-title">2022/02/02（水）
+							<div class="card-date-title-menu"><div class="icon-mid"><i class="fa-solid fa-chevron-down"></i></div></div>
+						</div>
+
+						<!-- 指示歴処方 -->
+						<div class="card-nomal">
+							<div class="card-heading">
+								<div class="card-title"><div class="icon-mid-nomal"><i class="fa-solid fa-capsules"></i></div> 処方
+									<div class="card-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+								</div>
+								<div class="card-date">[臨時]2022/02/02 朝</div>
+							</div>
+							<div class="card-body">
+								医師名（診療科）<br>
+								No.123456789012345＜1＞<br>
+								Rp1<br>
+								　ロキソニン 3錠<br>
+								　分3 毎食後 7日分
+							</div>
+							<div class="card-detail">
+								2022/02/02 10:00 ユーザ名＜職種＞により初回発行<br>
+								2022/02/02 10:00 ユーザ名＜職種＞（診療科）により発行<br>
+								社会保険
+							</div>
+						</div>
+
+						<!-- 指示歴日付 -->
+						<div class="card-date-title">2022/02/01（火）
+							<div class="card-date-title-menu"><div class="icon-mid"><i class="fa-solid fa-chevron-up"></i></div></div>
+						</div>
+
+					</div>
+
+					<!-- 中央部 -->
+					<div class="col-md-4">
+
+						<!-- タイトル -->
+						<div class="container-base">
+							<div class="icon-mid-nomal"><i class="fa-solid fa-person"></i></div>
+							患者プロフィール
+							<div class="container-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+						</div>
+
+						<!-- 重要情報 -->
+						<div class="card-nomal">
+							<div class="card-heading">
+								<div class="card-title"><div class="icon-mid-nomal"><i class="fa-solid fa-capsules"></i></div> 重要情報
+									<div class="card-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+								</div>
+							</div>
+							<div class="card-body">
+								DNR
+							</div>
+						</div>
+
+						<!-- コメント -->
+						<div class="card-nomal">
+							<div class="card-heading">
+								<div class="card-title"><div class="icon-mid-nomal"><i class="fa-solid fa-capsules"></i></div> コメント
+									<div class="card-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+								</div>
+							</div>
+							<div class="card-body">
+								飲酒情報：飲酒歴１合／日<br>
+								喫煙情報：喫煙1日20本<br>
+								輸血情報：輸血歴なし<br>
+								既往歴　：高血圧症高血糖<br>
+								　　　　　膀胱炎を複数回反復<br>
+								家族歴　：父と母と同居
+							</div>
+						</div>
+
+						<!-- 禁忌・感染症 -->
+						<div class="card-nomal">
+							<div class="card-heading">
+								<div class="card-title"><div class="icon-mid-nomal"><i class="fa-solid fa-capsules"></i></div> 禁忌・感染症
+									<div class="card-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+								</div>
+							</div>
+							<div class="card-body">
+								薬品アレルギー：ピリン<br>
+								薬品コメント　：ペースメーカー<br>
+								感染症　　　　：MRSA3+
+							</div>
+						</div>
+
+					</div>
+
+					<!-- 右サイド -->
+					<div class="col-md-4">
+
+							<!-- タイトル -->
+							<div class="container-base">
+								<div class="icon-mid-nomal"><i class="fa-solid fa-stethoscope"></i></div>
+								病名・サマリ情報
+								<div class="container-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+							</div>
+
+							<!-- 重要情報 -->
+							<div class="card-nomal">
+								<div class="card-heading">
+									<div class="card-title"><div class="icon-mid-nomal"><i class="fa-solid fa-stethoscope"></i></div> 病名
+										<div class="card-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+									</div>
+								</div>
+								<div class="card-body">
+									内科　　：ネフローゼ症候群<br>
+									　　　　　胃潰瘍の疑い<br>
+									整形外科：右捻挫
+								</div>
+							</div>
+
+							<!-- 中間サマリ -->
+							<div class="card-nomal">
+								<div class="card-heading">
+									<div class="card-title"><div class="icon-mid-nomal"><i class="fa-solid fa-notes-medical"></i></div> 中間サマリ
+										<div class="card-menu"><div class="icon-mid"><i class="fa-solid fa-ellipsis-vertical"></i></div></div>
+									</div>
+									<div class="card-date">[完成]１版</div>
+								</div>
+								<div class="card-body-record">
+									67才　女性<br><br>
+									【主訴】<br>
+									蛋白尿、下腿浮腫<br>
+									【既往歴】<br>
+									膀胱炎を複数回反復<br>
+									【生活歴】<br>
+									喫煙(+)、飲酒(+)<br>
+									【アレルギー】<br>
+									特記事項なし、喘息(-)<br>
+									【家族歴】<br>
+									父方いとこ：ネフローゼ症候群（10代発症、原疾患等詳細不明）<br>
+									母方祖母の兄：腎疾患で透析、移植（詳細不明）<br>
+									【現病歴】<br>
+									●年●月末　普段47kgの体重が50kgに増加。
+									その後53kg、55kgと増加、自覚症状はなかったとのこと。膝関節、足関節を中心とした浮腫を自覚し、口渇も自覚したため「xx総合病院を受診した。
+									検査にて低蛋白血症、蛋白尿、高コレステロール血症、大量腹水を認めたため●/●当科紹介受診。
+									診察時検査にてAlb（1.4→0.9）低蛋白血症が進行しており、ネフローゼ症候群に対する加療目的で当日緊急入院となった。
+								</div>
+								<div class="card-detail">
+									2022/02/02 10:00 ユーザ名＜職種＞により初回発行<br>
+									2022/02/02 10:00 ユーザ名＜職種＞（診療科）により発行<br>
+									社会保険
+								</div>
+							</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!--BootstrapJavaScript-->
+	<script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+	<!--JavaScript追記があれば、BootstrapJavaScriptの後に追記-->
+
+
+</body>
+</html>
