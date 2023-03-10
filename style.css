@@ -252,7 +252,7 @@ a:hover {
 /* >>>>> ナビゲーションメニュー：PC >>>>> */
 @media (min-width: 900px) {
   .nav-button {
-    display: none;      /*ハンバーガーメニュー非表示*/
+    display: none;
   }
 /*  .nav ul {
     display: flex;
@@ -522,7 +522,7 @@ a:hover {
 
   /* .openMenu .kanja-select{
     left: 0;
-  }
+  } */
 
   .kanja-select, .hakkou-section, .kanja-info-icon, .user-info {
     position: absolute;
@@ -536,7 +536,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     transition: left 0.5s;
-  } */
+  }
 
   html, body {
     overflow-x: hidden;
