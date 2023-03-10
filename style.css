@@ -9,7 +9,7 @@
 
 /* >>>>> 基本 >>>>> */
 body {
-  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: #F3EDF7;
 }
 /* モバイルPC共通 */
@@ -24,7 +24,7 @@ body {
   /* PC */
   .container {
     /* width: 95%; */
-    /* max-width: 1240px; */
+    max-width: 100%;
     /* background-color: #ffffff; */
   }
 }
