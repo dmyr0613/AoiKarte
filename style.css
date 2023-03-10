@@ -508,7 +508,7 @@ a:hover {
   .header {
     position: relative;
   }
-  .sidemenu { /*, .kanja-select {*/
+  .sidemenu, .kanja-select {
     position: absolute;
     left: 100%;
     width: 100%;
@@ -522,9 +522,9 @@ a:hover {
 
   /* .openMenu .kanja-select{
     left: 0;
-  } */
+  }
 
-  /* .kanja-select, .hakkou-section, .kanja-info-icon, .user-info {
+  .kanja-select, .hakkou-section, .kanja-info-icon, .user-info {
     position: absolute;
     top: 0;
     left: 100%;
