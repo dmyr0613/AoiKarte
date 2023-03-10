@@ -188,8 +188,8 @@ a:hover {
 /* <<<<< ハンバーガーメニュー <<<<< */
 
 /* >>>>> ナビゲーションメニュー：モバイル >>>>> */
-@media (max-width: 899px) {
-  /* html.open , .open body {
+/*@media (max-width: 899px) {
+   html.open , .open body {
     height: 100%;
     overflow: hidden;
   }
@@ -245,8 +245,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     transition: left 0.5s;
-  } */
-}
+  }
+}*/
 /* <<<<< ナビゲーションメニュー：モバイル <<<<< */
 
 /* >>>>> ナビゲーションメニュー：PC >>>>> */
@@ -701,7 +701,7 @@ a:hover {
 }
 
 /* レスポンシブ対応 */
-@media(max-width:800px){
+@media (min-width:900px){
     .shiji-reki-nav{
         flex-wrap: wrap;
     }
