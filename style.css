@@ -404,7 +404,7 @@ a:hover {
 }
 /* コンテナボックスメニューアイコン */
 .container-box-icon {
-  margin: -4px 0px 0px 0px;
+  margin: -2px 0px 0px 0px;
   float: right;
 }
 /* <<<<< コンテナボックス <<<<< */
@@ -458,7 +458,7 @@ a:hover {
 /* 動作がある中アイコン */
 .icon-small {
   color: #8e8e8e;
-  padding: 4px;
+  /* padding: 4px; */
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -466,16 +466,20 @@ a:hover {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  overflow: hidden;
+  position: relative;
 }
 .icon-small-active {
   background-color: #eaddff;
   color: #6750a4;
-  padding: 4px;
+  /* padding: 4px; */
   display: table-cell;
   vertical-align: middle;
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  overflow: hidden;
+  position: relative;
 }
 .icon-small:hover,
 .icon-small:focus {
@@ -504,9 +508,20 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
-.icon-mid-active img, .icon-mid img, .order-button-icon img, .icon-mid-nomal img {
+.icon-mid-active img, .icon-mid img, .order-button-icon img, .icon-mid-nomal img, .icon-pinfo img, .icon-pinfo-active img, .icon-mid-gray img {
   /* アイコン位置・サイズ */
   width: 50%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.icon-small img, .icon-small-active img {
+  /* アイコン位置・サイズ */
+  width: 80%;
   height: auto;
   position: absolute;
   top: 0;
@@ -540,14 +555,16 @@ a:hover {
 .icon-mid-gray {
   background-color: #bcbcbc;
   color: #fff;
-  padding: 4px;
+  /* padding: 4px; */
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
 }
 .icon-mid-gray:hover,
 .icon-mid-gray:focus {
@@ -565,6 +582,8 @@ a:hover {
   border-radius: 50%;
   min-width: 30px;
   height: 30px;
+  overflow: hidden;
+  position: relative;
 }
 /* 患者情報アイコン活性 */
 .icon-pinfo-active {
@@ -576,6 +595,8 @@ a:hover {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  overflow: hidden;
+  position: relative;
 }
 /* <<<<< アイコン <<<<< */
 
