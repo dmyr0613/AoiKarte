@@ -24,8 +24,6 @@ body {
   /* PC */
   .container {
     /* width: 95%; */
-    max-width: 100%;
-    /* background-color: #ffffff; */
   }
 }
 /* <<<<< 基本 <<<<< */
@@ -74,7 +72,6 @@ a:hover {
 /* モバイルPC共通 */
 .header .container {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 @media (min-width: 900px) {
@@ -161,19 +158,6 @@ a:hover {
   box-shadow: 0 6px currentColor;
 }
 
-/* ナビゲーションボタン（閉じるボタン） */
-/* .open .nav-button {
-  z-index: 1000;
-  color: #ffffff;
-}
-.open .nav-button::before {
-  transform: translateY(1px) rotate(45deg);
-  box-shadow: none;
-}
-.open .nav-button::after {
-  transform: translateY(-1px) rotate(-45deg);
-} */
-
 .openMenu .nav-button {
   z-index: 1000;
   /* color: #ffffff; */
@@ -187,86 +171,12 @@ a:hover {
 }
 /* <<<<< ハンバーガーメニュー <<<<< */
 
-/* >>>>> ナビゲーションメニュー：モバイル >>>>> */
-/*@media (max-width: 899px) {
-   html.open , .open body {
-    height: 100%;
-    overflow: hidden;
-  }
-  .open .form {
-    display: none;
-  }
-  .open .nav {
-    left: 0;
-  }
-  .header {
-    position: relative;
-  }
-  .nav {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.5s;
-  }
-  html, body {
-    overflow-x: hidden;
-  }
-  .nav ul {
-    list-style: none;
-    font-weight: bold;
-    text-align: center;
-  }
-  .nav li:not(:last-child) {
-    margin-bottom: 40px;
-  }
-  .nav .btn {
-    color: inherit;
-  } */
-
-  /* .kanja-select, .hakkou-section, .kanja-info-icon, .user-info {
-    left: 0px;
-  }
-  .kanja-select, .hakkou-section, .kanja-info-icon, .user-info {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.5s;
-  }
-}*/
-/* <<<<< ナビゲーションメニュー：モバイル <<<<< */
-
 /* >>>>> ナビゲーションメニュー：PC >>>>> */
 @media (min-width: 900px) {
   .nav-button {
     display: none;
   }
-/*  .nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    color: #333333;
-  }
-  .nav li:not(:last-child) {
-    margin-right: 23px;
-  }
-  .nav .btn {
-    width: 148px;
-    border-color: #CDD6DD;
-  } */
+
 }
 /* <<<<< ナビゲーションメニュー：PC <<<<< */
 
@@ -511,53 +421,24 @@ a:hover {
   .sidemenu { /*, .kanja-select {*/
     /* display: none; */
 
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     left: 100%;
     width: 100%;
     height: 100vh;
     background: rgba(0,0,0,0.8);
-    /* display: flex;
-    justify-content: center; */
-    /* align-items: center; */
     transition: left 0.5s;
   }
-
-  /* .openMenu .kanja-select{
-    left: 0;
-  } */
 
   .kanja-select, .hakkou-section, .kanja-info-icon, .user-info {
     display: none;
 
-    /* position: absolute;
-    top: 0;
-    left: 100%; */
-
-    /* width: 100%; */
-    /* height: 100vh; */
-    /* background: rgba(0,0,0,0.8);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.5s; */
   }
 
   html, body {
     overflow-x: hidden;
   }
 
-  /* .sidemenu ul {
-    list-style: none;
-    font-weight: bold;
-    text-align: center;
-  }
-  .sidemenu li:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .sidemenu .btn {
-    color: inherit;
-  } */
 }
 /* <<<<< オーダボタンサイドメニュー：モバイル <<<<< */
 
