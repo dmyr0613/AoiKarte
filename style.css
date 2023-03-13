@@ -348,24 +348,23 @@ a:hover {
   border-radius: 24px;
   background-color: #eaddff;
   color: #6750a4;
-  /* font-size: 14px; */
   font-weight: bold;
   text-align: left;
 }
 /* オーダーボタンアイコン */
 .order-button-icon {
-  margin: -3px 0px 0px 0px;
+  margin: -10px 0px 0px 0px;
   float: left;
-  /* background-color: #bcbcbc; */
-  color: #8e8e8e;
-  padding: 4px;
   vertical-align: middle;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
 }
+
 /* オーダーボタンバッジ */
 .order-button-badge {
   margin: -2px 0px 0px 0px;
@@ -429,7 +428,9 @@ a:hover {
     /* display: none; */
 
     /* position: absolute; */
+    /* position: relative; */
     position: fixed;
+    z-index: 10000;
     left: 100%;
     width: 100%;
     height: 100vh;
@@ -484,23 +485,37 @@ a:hover {
 
 .icon-mid {
   color: #8e8e8e;
-  padding: 4px;
   display: table-cell;
   vertical-align: middle;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
 }
 .icon-mid-active {
   background-color: #eaddff;
   color: #6750a4;
-  padding: 4px;
   display: table-cell;
   vertical-align: middle;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
 }
+.icon-mid-active img, .icon-mid img, .order-button-icon img, .icon-mid-nomal img {
+  /* アイコン位置・サイズ */
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .icon-mid:hover,
 .icon-mid:focus {
   background-color: #eaddff;
@@ -508,15 +523,17 @@ a:hover {
 }
 /* 動作がない中アイコン */
 .icon-mid-nomal {
-  color: #8e8e8e;
-  padding: 4px;
+  /* color: #8e8e8e;
+  padding: 4px; */
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
 }
 
 /* 動作がある中アイコン（グレー） */
