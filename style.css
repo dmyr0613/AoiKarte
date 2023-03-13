@@ -439,6 +439,9 @@ a:hover {
     overflow-x: hidden;
   }
 
+  .button-small {
+    font-size: 12px;
+  }
 }
 /* <<<<< オーダボタンサイドメニュー：モバイル <<<<< */
 
