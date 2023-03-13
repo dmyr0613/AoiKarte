@@ -73,12 +73,18 @@ a:hover {
 .header .container {
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 0px 5px;
+  top: 0;
+  z-index: 10000;
 }
 @media (min-width: 900px) {
   /* PC */
   .header .container {
     height: 100px;
     margin-top: 10px;
+    padding: 0px 10px;
   }
 }
 
@@ -184,10 +190,12 @@ a:hover {
 /* >>>>> カルテメイン画面 >>>>> */
 .kartemain {
   text-align: center;
+  padding-top: 100px;
 }
 @media (min-width: 900px) {
   .kartemain {
-    padding: 10px 0;
+    /* padding: 10px 0; */
+    padding-top: 110px;
   }
 }
 /* <<<<< カルテメイン画面 <<<<< */
@@ -439,7 +447,8 @@ a:hover {
     overflow-x: hidden;
   }
 
-  .button-small {
+  /* レスポンス時ボタンのフォントサイズ変更 */
+  .button-small, .container-box {
     font-size: 12px;
   }
 }
